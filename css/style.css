@@ -1,0 +1,529 @@
+@font-face{
+    font-family: CustomFont;
+    src: url(https://www.jhetuts.com/css/fonts/Raleway-Regular.ttf);
+}
+body{
+    position: relative;
+    font-size: 1rem;
+    font-family: CustomFont;
+    color: #fff;
+    line-height: 1.5;
+}
+.wrapInner{
+    display: block;
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+}
+h1{font-size: 3.5rem;}
+h2{font-size: 3rem;}
+h3{font-size: 2.5rem;}
+h4{font-size: 2rem;}
+p{font-size: 1.5rem;}
+img{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.table{
+    display: table;
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+}
+.table .table-row{
+    display: table-row;
+}
+.table .table-row .table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+nav{
+    position: fixed;
+    right: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 1;
+}
+.nav-list{
+    background-color: #ccc;
+    border-radius: 5px;
+}
+.nav-list li a{
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+.nav-list li.active a{
+    color: #2a2a2a;
+    font-weight: bold;
+    border-bottom: 1px solid #2a2a2a;
+}
+.nav-list li:last-child a{
+    border-bottom: none;
+}
+.nav-list li.active:last-child a{
+    border-top: 1px solid #2a2a2a;
+}
+section{
+    position: relative;
+    height: 100vh;
+}
+.logo{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border-radius: 6px;
+    padding: 0 16px;
+    background: #2a2a2a;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    z-index: 2;
+    box-shadow: -0.1px 1px 1px #ccc;
+}
+#section01{
+    background: url(https://www.jhetuts.com/images/mv-01.jpg) no-repeat center center / cover;
+}
+#section01 .button{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    background: none;
+    border: 2px solid #fff;
+    width: 120px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+    text-decoration: none;}
+#section01 #learnmore{
+    border: 2px solid #7bdcda;
+    color: #7bdcda;
+}
+#section01 button:hover{
+    background: #2a2a2a;
+    color: #fff;
+    border: 2px solid #2a2a2a;
+}
+.section01-content{
+    text-align: center;
+    padding: 25%;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 200px #000;
+}
+.section01-content span{
+    color: #7bdcda;
+}
+#section01 .table-cell{
+    text-align: center;
+}
+#section02{
+    background: #fff;
+    text-align: center;
+    color: #000;
+}
+#section02 .tagline{
+    margin-bottom: 2rem;
+}
+.list-group:after{
+    display: table;
+    clear: both;
+    content: '';
+}
+.list-group .list-item{
+    float: left;
+    width: 25%;
+    overflow: hidden;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+.list-group .list-item img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.list-group .list-item a{
+    display: block;
+}
+.list-group .list-item a:hover img{
+    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#section03{
+    background: #2a2a2a;
+    text-align: center;
+    font-weight: normal;
+}
+.profile{
+    width: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    filter: grayscale(70%);
+    margin: 0 auto;
+    box-shadow: 0 0 18px #fff;
+}
+#section03 .details{
+    padding: 20px 0;
+}
+#section03 .details p{
+    text-align: center;
+    color: #ccc;
+}
+.divider{
+    display: block;
+    margin: 50px auto;
+    width: 20px;
+    height: 2px;
+    background-color: #7bdcda;
+    outline: none;
+    border: none;
+}
+.list-group-skills{
+    margin-top: 20px;
+}
+.list-group-skills:after{
+    display: table;
+    clear: both;
+    content: '';
+}
+.list-group-skills li {
+    display: inline-block;
+    width: 7%;
+    margin: 10px;
+}
+.list-group-skills li .skill-details{
+    padding: 16px;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 1px 16px #fff;
+    border: 1px solid #000;
+}
+.list-group-skills li .skill-details:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.list-group-skills li .title{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+#section04{
+    background: url('https://www.jhetuts.com/images/contact.jpg') no-repeat center center / cover;
+    color: #2a2a2a;
+    background-attachment: fixed;
+}
+#section04 h2,
+#section04 .tagline{
+    text-align: center;
+}
+#section04 .form{
+    margin: 20px 0 40px;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.4);
+}
+.form input[type="text"]{
+    display: inline-block;
+    width: 49.7%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #2a2a2a;
+    transition: 0.3s;
+}
+.form input:focus,
+.form textarea:focus{
+    outline: none;
+    transition: 0.3s;
+}
+.form textarea{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #2a2a2a;
+    resize: none;
+    transition: 0.3s;
+}
+.form button{
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background: transparent;
+    transition: 0.3s;
+}
+.form button:hover{
+    cursor: pointer;
+}
+.list-social-links{
+    text-align: center;
+}
+.list-social-links:after{
+    display: table;
+    clear: both;
+    content: '';
+}
+.list-social-links li{
+    display: inline-block;
+    width: 2%;
+    vertical-align: middle;
+    padding: 10px;
+    background: #eee;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 10px #ccc;
+    border-radius: 100%;
+}
+.list-social-links li:first-child{
+    width: auto;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+.list-social-links li a{
+    display: block;
+}
+
+.list-social-links li a:hover{
+    transform: scale(1.1);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    background: #2a2a2a;
+    padding: 20px 0;
+    left: 0;
+    width: 100%;
+}
+.page-top{
+    position: absolute;
+    bottom: 64px;
+    z-index: 1;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    border-right: 2px solid #000;
+    border-top: 2px solid #000;
+    transform: rotate(-45deg);
+}
+
+/* Media Querys */
+
+@media(max-width: 1024px){
+    .table,
+    .wrapInner{
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    #section01{
+        height: 100vh;
+    }
+    nav{
+        top: 10%;
+        transform: translateY(-10%);
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .section01-content{
+        padding: 15%;
+    }
+    #section01 button{
+        width: 93px;
+        font-size: 0.6rem;
+    }
+    .profile{
+        width: 150px;
+    }
+    .divider{
+        margin: 20px auto;
+    }
+    .list-group-skills{
+        margin-top: 10px;
+    }
+    .list-group-skills li{
+        width: 10%;
+    }
+}
+@media(max-width: 768px){
+    .list-group .list-item{
+        width: 33.33%;
+    }
+    nav{
+        top: 20px;
+        right: 20px;
+        transform: translateY(-10%);
+    }
+    .nav-list{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border-radius: 100%;
+        transition: 0.5s;
+        z-index: 1;
+    }
+    .nav-list:before{
+        position: absolute;
+        left: 10px;
+        top: 16px;
+        width: 30px;
+        border-top: 1px solid #2a2a2a;
+        height: 15px;
+        border-bottom: 1px solid #2a2a2a;
+        content: '';
+        transition: 0.5s;
+    }
+    
+    .nav-list:after{
+        position: absolute;
+        left: 10px;
+        top: 24px;
+        width: 30px;
+        border-bottom: 1px solid #2a2a2a;
+        content: '';
+        transition: 0.5s;
+    }
+    .nav-list li{
+        display: none;
+        transition: 0.5s;
+    }
+    .nav-list.active{
+        overflow: visible;
+        transition: 0.5s;
+    }
+    .nav-list.active:before{
+        position: absolute;
+        left: 4px;
+        top: 22px;
+        width: 30px;
+        border-top: 1px solid #2a2a2a;
+        height: 15px;
+        border-bottom: none;
+        content: '';
+        transform: rotate(45deg);
+        transition: 0.5s;
+    }
+    .nav-list.active:after{
+        position: absolute;
+        left: 10px;
+        top: 24px;
+        width: 30px;
+        border-bottom: 1px solid #2a2a2a;
+        content: '';
+        transform: rotate(-45deg);
+        transition: 0.5s;
+    }
+    .nav-list.active li{
+        display: block;
+        transition: 0.5s;
+    }
+    .nav-list.active li:first-child{
+        padding-top: 50px;
+    }
+    .nav-list li a{
+        padding: 18.9px 0;
+        font-size: 0.5rem;
+        background: #ccc;
+        border-radius: 100%;
+    }
+    .nav-list li.active a{
+        color: #fff;
+        font-weight: bold;
+        background: #2a2a2a;
+        border: 1px solid #fff;
+    }
+    #section01 .button{
+        padding: 10px;
+        margin-top: 10px;
+        background: none;
+        border: 2px solid #fff;
+        width: 100px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        transition: 0.5s;
+        text-decoration: none;
+        font-size: 0.65rem;
+    }
+}
+@media(max-width: 767px){
+    section{
+        height: auto;
+        padding: 50px 0;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.75rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+        padding: 0 12px;
+    }
+    .list-group .list-item{
+        width: 50%;
+    }
+    .list-group-skills li{
+        width: 15%;
+    }
+    #section04 .form{
+        margin: 20px 0;
+        padding: 20px;
+    }
+    .form input[type="text"]{
+        width: 100%;
+        padding: 10px;
+    }
+    .form textarea{
+        padding: 10px;
+    }
+    .list-group-skills li .title{
+        font-size: 0.5rem;
+    }
+    .list-group-skills li .skill-details{
+        padding: 10px;
+    }
+    #section04{
+        background: #ccc url(https://www.jhetuts.com/images/contact.jpg) no-repeat -72px 0 / cover;
+    color: #2a2a2a;
+    }
+    .list-social-links{
+        margin-bottom: 20px;
+    }
+    .list-social-links li{
+        width: 8%;
+        padding: 4px;
+    }
+    .page-top{
+        bottom: 50px;
+        width: 20px;
+        height: 20px;
+    }
+    footer{
+        padding: 0;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+}
